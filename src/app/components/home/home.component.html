@@ -1,0 +1,21 @@
+<div class="home-container">
+  <header class="header">
+    <h1>Welcome to Our Application</h1>
+    <p class="subtitle">Discover our amazing items below</p>
+  </header>
+  
+  <section class="items-section">
+    <h2>Featured Items</h2>
+    <div class="items-grid">
+      @for (item of items; track item.id) {
+        <div class="item-card">
+          <div class="item-content">
+            <h3>{{ item.name }}</h3>
+            <p class="item-description">A beautiful item with ID: {{ item.id }}</p>
+            <button class="view-button">View Details</button>
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+</div>
